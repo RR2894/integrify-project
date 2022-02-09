@@ -4,6 +4,12 @@
 
 ![GitHub forks](https://img.shields.io/github/issues/RR2894/integrify-project)
 
+
+
+![](image.png)
+
+
+
 This simple react project displays basic user information in cards, which, upon clicking- shows additional details for each individual user. 
 
 
