@@ -35,3 +35,7 @@ cd frontend
 npm run start
 ```
 
+
+# To do:
+
+Add button functionality after clicking the cards to display the rest of the information. 
