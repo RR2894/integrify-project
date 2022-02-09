@@ -12,6 +12,7 @@ const SocialCard = ({ userData }) => {
                 <Username username={userData.username}/>
                 <Website website={userData.website}/>
             </div>
+            <button>More Info</button>
 
         </div>
     )
