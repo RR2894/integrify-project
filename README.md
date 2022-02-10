@@ -14,6 +14,12 @@ This simple react project displays basic user information in cards, which, upon 
 
 
 
+![](image2.png)
+
+Buttons are functional and display the information from each individual's user card.
+
+
+
 
 ## Installation (IntelliJ Idea recommended)
 
