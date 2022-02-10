@@ -4,7 +4,7 @@ import Username from './Username';
 import Website from './Website';
 import Popup from './Popup';
 
-const SocialCard = ({ userData }) => {
+const SocialCard = ({ userData, setModal }) => {
     return (
         <div className="card">
             <div className="card__title">{userData.name.first} {userData.name.last}</div>
@@ -13,18 +13,7 @@ const SocialCard = ({ userData }) => {
                 <Username username={userData.username}/>
                 <Website website={userData.website}/>
             </div>
-            <button id="myBtn">More Info</button>
-
-            <div id="myModal" class="modal">
-
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p></p>
-              </div>
-
-            </div>
-
-
+            <button id="myBtn" onClick={() => {setModal(userData)}}>More Info</button>
 
         </div>
     )
