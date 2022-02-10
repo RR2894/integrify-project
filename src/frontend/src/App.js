@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import SocialCard from "./SocialCard";
+import Popup from './Popup';
 
 function App() {
   const [allUsers, setAllUsers] = useState([]);
@@ -26,6 +27,12 @@ function App() {
     const filteredUsers = allUsers.filter(user => (`${user.name}`.toLowerCase().includes(value)));
     setUsers(filteredUsers);
   }
+  {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopup = () =>
+      setIsOpen(!isOpen);
+    }
 
   return (
     <div className="App">
@@ -40,5 +47,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

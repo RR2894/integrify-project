@@ -2,6 +2,7 @@ import './SocialCard.css';
 import Name from './Name';
 import Username from './Username';
 import Website from './Website';
+import Popup from './Popup';
 
 const SocialCard = ({ userData }) => {
     return (
@@ -12,7 +13,18 @@ const SocialCard = ({ userData }) => {
                 <Username username={userData.username}/>
                 <Website website={userData.website}/>
             </div>
-            <button>More Info</button>
+            <button id="myBtn">More Info</button>
+
+            <div id="myModal" class="modal">
+
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p></p>
+              </div>
+
+            </div>
+
+
 
         </div>
     )
